@@ -1,0 +1,7 @@
+{{!-- {{yield}} --}}
+<select {{bindAttr name=name}}>
+  {{log options}}
+  {{#each options}}
+    <option {{bindAttr value=this}}>{{this}}</option>
+  {{/each}}
+</select>
