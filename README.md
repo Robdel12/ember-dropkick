@@ -1,3 +1,6 @@
+# TODOs:
+- [ ] TODO: Update package.json with correct info after plugin is built (version number mainly)
+
 # Ember-dropkick
 
 This README outlines the details of collaborating on this Ember addon.

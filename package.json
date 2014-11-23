@@ -14,7 +14,7 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Robert DeLuca & Wil Wilsman",
   "license": "MIT",
   "devDependencies": {
     "body-parser": "^1.2.0",
