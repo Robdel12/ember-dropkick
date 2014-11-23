@@ -3,8 +3,12 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   tagName: 'span',
   classNames: ['dk-wrapper'],
+  firstSelected: null,
 
   didInsertElement: function(){
-    new Dropkick(this.$('select')[0]);
+    var dropkick = new Dropkick(this.$('select')[0]);
+    if(this.get("firstSelected")) {
+      dropkick.select(parseInt(this.get("firstSelected"), 10) - 1);
+    }
   }
 });
