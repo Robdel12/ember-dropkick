@@ -2,7 +2,8 @@
 - [ ] TODO: Update package.json with correct info after plugin is built (version number mainly)
 - [ ] TODO: Write tests
 - [ ] TODO: Change what becomes the value and what becomes the option text
-- [ ] TODO: Make it into a helper rather than a component
+- [x] TODO: Multi Select option
+- [ ] TODO: Opt group support
 
 # Ember-dropkick
 

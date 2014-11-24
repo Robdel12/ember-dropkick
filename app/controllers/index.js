@@ -1,5 +1,5 @@
 import Ember from "ember";
 
 export default Ember.ObjectController.extend({
-  optionsKey: ["1", "2", "3"]
+  optionsKey: ["ewuir hewr", "ewfioweoi wef", "eorifioerio wef"]
 });

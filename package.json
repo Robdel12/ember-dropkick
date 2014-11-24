@@ -10,7 +10,7 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "https://github.com/stefanpenner/ember-cli",
+  "repository": "https://github.com/Robdel12/ember-dropkick",
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -30,7 +30,11 @@
     "glob": "^4.0.5"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "ember select",
+    "select replacement",
+    "select",
+    "Dropkick.js"
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
