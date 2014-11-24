@@ -7,8 +7,9 @@ export default Ember.Component.extend({
 
   didInsertElement: function(){
     var dropkick = new Dropkick(this.$('select')[0]);
-    if(this.get("firstSelected")) {
-      dropkick.select(parseInt(this.get("firstSelected"), 10) - 1);
+
+    if(this.get('firstSelected')) {
+      dropkick.select(parseInt(this.get('firstSelected'), 10) - 1);
     }
   }
 });

@@ -1,6 +1,5 @@
-{{!-- {{yield}} --}}
-<select {{bindAttr name=name}}>
+<select {{bind-attr name=name}}>
   {{#each options}}
-    <option {{bindAttr value=this}}>{{this}}</option>
+    <option {{bind-attr value=this}}>{{this}}</option>
   {{/each}}
 </select>
