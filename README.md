@@ -4,7 +4,7 @@
 - [x] TODO: Extend `Ember.Select`
 - [ ] TODO: Write installation guide in place of this README
 
-# Ember-dropkick
+# Ember-dropkick [![Build Status](https://travis-ci.org/Robdel12/ember-dropkick.svg)](https://travis-ci.org/Robdel12/ember-dropkick)
 
 This README outlines the details of collaborating on this Ember addon.
 
