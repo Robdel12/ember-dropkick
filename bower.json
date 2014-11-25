@@ -12,9 +12,7 @@
     "ember-load-initializers": "stefanpenner/ember-load-initializers#0.0.2",
     "ember-qunit": "0.1.8",
     "ember-qunit-notifications": "0.0.4",
-    "qunit": "~1.15.0"
-  },
-  "devDependencies": {
-    "DropKick.js": "^2.0.2"
+    "qunit": "~1.15.0",
+    "dropkick": "^2.0.2"
   }
 }
