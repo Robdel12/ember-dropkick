@@ -1,7 +1,7 @@
 /* global Dropkick */
 import Ember from 'ember';
 
-export default Ember.Select.extend({
+export default Ember.View.extend(Ember.Select, {
 
   _dk: null,
   settings: {},
