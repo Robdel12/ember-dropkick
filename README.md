@@ -2,19 +2,36 @@
 - [ ] TODO: Update package.json with correct info after plugin is built (version number mainly)
 - [x] TODO: Write simple tests
 - [x] TODO: Extend `Ember.Select`
-- [ ] TODO: Write installation guide in place of this README
+- [x] TODO: Write installation guide in place of this README
 
 # Ember-dropkick [![Build Status](https://travis-ci.org/Robdel12/ember-dropkick.svg)](https://travis-ci.org/Robdel12/ember-dropkick)
 
-This README outlines the details of collaborating on this Ember addon.
-
 ## Installation
 
-* `git clone` this repository
-* `npm install`
+* `npm install ember-dropkick --save-dev`
 * `bower install`
 
-## Running Tests
+# Usage
 
-* `ember test`
-* `ember test --server`
+In your template:
+`{{view "dk-select" content=yourOptions settings=yourSettings}}`
+
+In your controller:
+```javascript
+export default Ember.ObjectController.extend({
+  yourOptions: ["Your", "Options", "Here"],
+  settings: {
+    mobile: true
+    .... (dk settings)
+  }
+});
+```
+If you would like to use the methods on dk select add an ID to the select.
+
+`{{view "dk-select" content=yourOptions settings=yourSettings id="your_id"}}`
+
+In your controller somewhere:
+
+`Dropkick("#your_id").select(0)` (or what ever method you chose).
+
+We can do this because DropKick caches the objects it creates.
