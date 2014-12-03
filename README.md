@@ -13,7 +13,10 @@
 
 # Usage
 
+Ember Dropkick extends Ember.select so everything you would do with an Ember.Select you can do with Ember DropKick!
+
 In your template:
+
 `{{view "dk-select" content=yourOptions settings=yourSettings}}`
 
 In your controller:
