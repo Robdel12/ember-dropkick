@@ -1,15 +1,11 @@
-# TODOs:
-- [ ] TODO: Update package.json with correct info after plugin is built (version number mainly)
-- [x] TODO: Write simple tests
-- [x] TODO: Extend `Ember.Select`
-- [x] TODO: Write installation guide in place of this README
-
 # Ember-dropkick [![Build Status](https://travis-ci.org/Robdel12/ember-dropkick.svg)](https://travis-ci.org/Robdel12/ember-dropkick)
 
 ## Installation
 
 * `npm install ember-dropkick --save-dev`
 * `bower install`
+
+**Note that we are still testing this. If you find issues please let us know by opening a github issue!**
 
 # Usage
 
