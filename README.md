@@ -3,7 +3,7 @@
 ## Installation
 
 * `npm install ember-dropkick --save-dev`
-* `bower install`
+* `ember g ember-dropkick`
 
 **Note that we are still testing this. If you find issues please let us know by opening a github issue!**
 
