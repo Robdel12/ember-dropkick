@@ -6,10 +6,6 @@ module.exports = {
 
     app.import(app.bowerDirectory + '/dropkick/dropkick.js');
     app.import(app.bowerDirectory + '/dropkick/css/dropkick.css');
-  },
-
-  afterInstall: function() {
-    return this.addBowerPackageToProject('dropkick');
   }
-
+  
 };
