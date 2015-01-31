@@ -6,11 +6,9 @@ export default Ember.Select.extend({
   _dk: null,
   settings: {},
 
-  init: function() {
+  setUpDropKick: function() {
     var self = this,
       oldChange = this.get('settings.change');
-
-    this._super();
 
     this.set('settings.change', function() {
       self.trigger('change');
@@ -19,7 +17,7 @@ export default Ember.Select.extend({
         oldChange.call(this);
       }
     });
-  },
+  }.on('init'),
 
   updateDk: function() {
     if (this._dk !== null) {
