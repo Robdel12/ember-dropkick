@@ -21,9 +21,7 @@ export default Ember.Select.extend({
 
   updateDk: function() {
     if (this._dk !== null) {
-      // Dropkick/master needs update to fix `select` method bug
-      //this._dk.select(this.get('value'));
-      this._dk.select(this._dk.search(this.get('value'))[0]);
+      this._dk.select(this.get('value'));
     }
   }.observes('value'),
 

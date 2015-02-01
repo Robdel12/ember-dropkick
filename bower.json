@@ -14,6 +14,6 @@
     "qunit": "~1.17.1"
   },
   "devDependencies": {
-    "dropkick": "~2.0.2"
+    "dropkick": "git://github.com/Robdel12/DropKick.git#v2.1"
   }
 }
