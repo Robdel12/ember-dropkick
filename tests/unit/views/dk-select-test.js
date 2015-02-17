@@ -34,9 +34,7 @@ test('should update Dropkick', function() {
 
 test('should update value', function() {
   run(this.view._dk, function() {
-    // Dropkick/master needs update to fix `select` method bug
-    //this.select('option 2');
-    this.select(this.search('option 2')[0]);
+    this.select(this.select('option 2'));
   });
 
   equal(this.view.get('value'), 'option 2');
