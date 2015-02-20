@@ -20,7 +20,7 @@ export default Ember.Select.extend({
   }.on('init'),
 
   updateDk: function() {
-    if (this._dk && this._dk.data) {
+    if (this._dk !== null) {
       this._dk.select(this.get('value'));
     }
   }.observes('value'),
@@ -30,7 +30,7 @@ export default Ember.Select.extend({
   }.on('didInsertElement'),
 
   destroyDk: function() {
-    if (this._dk && this._dk.data) {
+    if (this._dk !== null) {
       this._dk.dispose();
     }
   }.on('willDestroyElement')
