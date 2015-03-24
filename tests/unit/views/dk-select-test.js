@@ -16,26 +16,26 @@ moduleFor('view:dk-select', 'DkSelectView', {
   }
 });
 
-test('should exist', function() {
-  ok(!!this.view); // boolean to avoid stringify bug with testem and chrome
+test('should exist', function(assert) {
+  assert.ok(!!this.view); // boolean to avoid stringify bug with testem and chrome
 });
 
-test('should render Dropkick', function() {
-  ok(!!this.view._dk); // boolean (see above)
+test('should render Dropkick', function(assert) {
+  assert.ok(!!this.view._dk); // boolean (see above)
 });
 
-test('should update Dropkick', function() {
+test('should update Dropkick', function(assert) {
   run(this, function() {
     this.view.set('value', 'option 2');
   });
 
-  equal(this.view._dk.value, 'option 2');
+  assert.equal(this.view._dk.value, 'option 2');
 });
 
-test('should update value', function() {
+test('should update value', function(assert) {
   run(this.view._dk, function() {
     this.select(this.select('option 2'));
   });
 
-  equal(this.view.get('value'), 'option 2');
+  assert.equal(this.view.get('value'), 'option 2');
 });
