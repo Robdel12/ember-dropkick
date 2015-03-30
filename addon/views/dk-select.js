@@ -6,9 +6,11 @@ export default Ember.Select.extend({
   _dk: null,
   settings: {},
 
-  setUpDropKick: function() {
+  init: function() {
     var self = this,
       oldChange = this.get('settings.change');
+
+    this._super.apply(this, arguments);
 
     this.set('settings.change', function() {
       self.trigger('change');
@@ -17,22 +19,22 @@ export default Ember.Select.extend({
         oldChange.call(this);
       }
     });
-  }.on('init'),
+  },
 
-  updateDk: function() {
+  updateDk: Ember.observer('value', function() {
     if (this._dk !== null) {
       this._dk.select(this.get('value'));
     }
-  }.observes('value'),
+  }),
 
-  createDk: function() {
+  createDk: Ember.on('didInsertElement', function() {
     this._dk = new Dropkick(this.get('element'), this.get('settings'));
-  }.on('didInsertElement'),
+  }),
 
-  destroyDk: function() {
+  destroyDk: Ember.on('willDestroyElement', function() {
     if (this._dk !== null) {
       this._dk.dispose();
     }
-  }.on('willDestroyElement')
+  })
 
 });
