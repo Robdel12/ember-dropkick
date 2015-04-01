@@ -4,8 +4,6 @@
 
 * `ember install:addon ember-dropkick`
 
-**Note that we are still testing this. If you find issues please let us know by opening a github issue!**
-
 # Usage
 
 Ember Dropkick extends Ember.select so everything you would do with an Ember.Select you can do with Ember DropKick!
