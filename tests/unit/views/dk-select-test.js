@@ -2,12 +2,13 @@ import { test, moduleFor } from 'ember-qunit';
 import Ember from 'ember';
 
 var run = Ember.run;
+var optionsArray = ['option 1', 'option 2'];
 
 moduleFor('view:dk-select', 'DkSelectView', {
   setup: function() {
     run(this, function() {
       this.view = this.subject({
-        content: ['option 1', 'option 2'],
+        content: Ember.A(optionsArray),
         value: 'option 1'
       });
 
