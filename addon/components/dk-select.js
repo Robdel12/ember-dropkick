@@ -1,7 +1,8 @@
 /* global Dropkick */
 import Ember from 'ember';
+import XSelectComponent from 'emberx-select/components/x-select';
 
-export default Ember.Select.extend({
+export default XSelectComponent.extend({
 
   _dk: null,
   settings: {},
