@@ -46,7 +46,7 @@
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.3",
-    "emberx-select": "^2.0.0"
+    "emberx-select": "^2.0.1"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"

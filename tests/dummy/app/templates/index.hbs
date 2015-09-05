@@ -1,8 +1,10 @@
 <p>With mobile:</p>
-{{#dk-select settings=settings}}
-  <option value="">sososos</option>
-  {{#x-option}}Something{{/x-option}}
+{{#dk-select value=something action="someAction" settings=settings class="spec-test-dk"}}
+  {{#dk-option value="Something"}}Something{{/dk-option}}
+  {{#dk-option value="sosoos" id="spec_sosoos"}}sosoos{{/dk-option}}
 {{/dk-select}}
+
+Value of Select: {{something}}
 
 <p>Without mobile</p>
 {{#dk-select}}
