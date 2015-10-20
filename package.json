@@ -1,6 +1,6 @@
 {
   "name": "ember-dropkick",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "An Ember CLI addon for creating beautiful, graceful, and painless custom dropdowns with DropKick.js",
   "directories": {
     "doc": "doc",
@@ -43,6 +43,7 @@
     "Dropkick.js"
   ],
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "demoURL": "http://dropkickjs.com"
   }
 }
