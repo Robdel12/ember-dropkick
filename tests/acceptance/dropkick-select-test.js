@@ -32,8 +32,7 @@ describe('Acceptance: DropkickSelect', function() {
 
   describe("when changing the selection", function() {
     beforeEach(function() {
-      click('.spec-test-dk');
-      return click('#dk2-spec_sosoos');
+      return window.Dropkick(this.component.element).select("sosoos");
     });
 
     it("dk updates the controller value", function() {
