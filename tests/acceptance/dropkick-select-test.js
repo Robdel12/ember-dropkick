@@ -14,8 +14,13 @@ describe('Acceptance: DropkickSelect', function() {
 
   beforeEach(function() {
     let el = Ember.$('select');
+    let isGlimmer = Ember.VERSION.substring(0, 4) === "1.13";
 
-    this.component = App.__container__.lookup('-view-registry:main')[el.attr('id')];
+    if(Ember.View && !isGlimmer) {
+      this.component = Ember.View.views[el.attr('id')];
+    } else {
+      this.component = App.__container__.lookup('-view-registry:main')[el.attr('id')];
+    }
     this.$ = function() {
       return this.component.$.apply(this.component, arguments);
     };
