@@ -9,7 +9,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember try:testall"
+    "test": "ember try:testall",
+    "deploy": "git checkout gh-pages && git branch --set-upstream-to=origin/gh-pages && git reset --hard origin/gh-pages && git pull && git checkout master && ember github-pages:commit --message \"Publish demo application.\" && git push origin gh-pages:gh-pages"
   },
   "repository": "https://github.com/Robdel12/ember-dropkick",
   "engines": {
