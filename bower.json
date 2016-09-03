@@ -2,7 +2,7 @@
   "name": "ember-dropkick",
   "dependencies": {
     "ember": "~2.7.0",
-    "dropkick": "^2.1.7",
+    "dropkick": "^2.1.9",
     "ember-mocha": "~0.8.11",
     "ember-cli-shims": "0.1.1"
   }
