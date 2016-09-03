@@ -21,6 +21,7 @@ matrix:
     - env: EMBER_TRY_SCENARIO=ember-canary
 
 before_install:
+  - export PATH=/usr/local/phantomjs-2.0.0/bin:$PATH
   - "npm config set spin false"
   - "npm install -g npm@^2"
 
@@ -29,8 +30,5 @@ install:
   - npm install
   - bower install
 
-after_success:
-  "npm run deploy"
-
 script:
-  - npm test
+  - ember try $EMBER_TRY_SCENARIO test
